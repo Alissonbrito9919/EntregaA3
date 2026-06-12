@@ -9,19 +9,6 @@ Este repositório contém o código-fonte de um agente preditivo desenvolvido em
 **Validação por Prova Cega Geográfica:** O modelo foi treinado com dados de 25 estados e testado nos estados isolados de São Paulo e Minas Gerais, garantindo a capacidade de generalização com dados nunca antes vistos pela IA.
 **Ajuste de Pesos Inversos:** Uso do hiperparâmetro `auto_class_weights='Balanced'` para neutralizar o viés da classe majoritária, permitindo mapear a minoria propensa à Terceira Via, Brancos e Nulos.
 
-## Desempenho e Resultados do Modelo
-
-Na Prova Cega Geográfica, o agente alcançou uma Acurácia Geral de 75,58% e um F1-Score médio de 0,60 (Macro Avg), avaliado em uma base com 10.000 amostras reais de teste.
-
-### Relatório Detalhado de Classificação
-
-| Classe Alvo | Precisão (Precision) | Sensibilidade (Recall) | F1-Score | Amostras (Support) |
-| :--- | :---: | :---: | :---: | :---: |
-| Voto em Polos | [cite_start]0,84 [cite: 58] | [cite_start]0,86 [cite: 58] | 0,85 | 8.049 |
-| Terceira Via / Branco / Nulo | [cite_start]0,37 [cite: 65] | [cite_start]0,34 [cite: 65] | 0,35 | 1.951 |
-| **Acurácia Geral do Agente** | — | — | [cite_start]**0,76** [cite: 52] | [cite_start]**10.000** [cite: 55] |
-| **Média Geral (Macro Avg)** | **0,60** | **0,60** | [cite_start]**0,60** [cite: 66] | [cite_start]**10.000** [cite: 55] |
-
 ## Tecnologias Utilizadas
 
 * [cite_start]Python 3 [cite: 72]
