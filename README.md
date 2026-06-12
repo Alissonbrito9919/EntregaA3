@@ -1,17 +1,17 @@
 # Agente de IA para Classificação de Perfis Eleitorais
 
-[cite_start]Este repositório contém o código-fonte de um agente preditivo desenvolvido em Python para inferir a propensão eleitoral de indivíduos com base em recortes sociodemográficos e regionais[cite: 45, 48, 59]. [cite_start]O projeto mitiga o desequilíbrio de classes presente em dados públicos através do algoritmo CatBoost combinado a funções de custo balanceadas[cite: 50].
+Este repositório contém o código-fonte de um agente preditivo desenvolvido em Python para inferir a propensão eleitoral de indivíduos com base em recortes sociodemográficos e regionais.O projeto mitiga o desequilíbrio de classes presente em dados públicos através do algoritmo CatBoost combinado a funções de custo balanceadas.
 
 ## Diferenciais Técnicos e Metodologia
 
-* [cite_start]**Cruzamento de Dados Públicos:** Integração e unificação de históricos de votação do TSE (Eleições 2022) com indicadores sociais e demográficos do Censo do IBGE[cite: 51].
-* [cite_start]**Engenharia de Recursos Granular:** Refinamento de variáveis como escolaridade e localização geográfica para aumentar o poder de discriminação do modelo[cite: 51, 63].
-* [cite_start]**Validação por Prova Cega Geográfica:** O modelo foi treinado com dados de 25 estados e testado nos estados isolados de São Paulo e Minas Gerais, garantindo a capacidade de generalização com dados nunca antes vistos pela IA[cite: 52, 73].
-* [cite_start]**Ajuste de Pesos Inversos:** Uso do hiperparâmetro `auto_class_weights='Balanced'` para neutralizar o viés da classe majoritária, permitindo mapear a minoria propensa à Terceira Via, Brancos e Nulos[cite: 50, 76].
+**Cruzamento de Dados Públicos:** Integração e unificação de históricos de votação do TSE (Eleições 2022) com indicadores sociais e demográficos do Censo do IBGE[cite: 51].
+**Engenharia de Recursos Granular:** Refinamento de variáveis como escolaridade e localização geográfica para aumentar o poder de discriminação do modelo.
+**Validação por Prova Cega Geográfica:** O modelo foi treinado com dados de 25 estados e testado nos estados isolados de São Paulo e Minas Gerais, garantindo a capacidade de generalização com dados nunca antes vistos pela IA.
+**Ajuste de Pesos Inversos:** Uso do hiperparâmetro `auto_class_weights='Balanced'` para neutralizar o viés da classe majoritária, permitindo mapear a minoria propensa à Terceira Via, Brancos e Nulos.
 
 ## Desempenho e Resultados do Modelo
 
-[cite_start]Na Prova Cega Geográfica, o agente alcançou uma Acurácia Geral de 75,58% e um F1-Score médio de 0,60 (Macro Avg), avaliado em uma base com 10.000 amostras reais de teste[cite: 52, 55, 66].
+Na Prova Cega Geográfica, o agente alcançou uma Acurácia Geral de 75,58% e um F1-Score médio de 0,60 (Macro Avg), avaliado em uma base com 10.000 amostras reais de teste.
 
 ### Relatório Detalhado de Classificação
 
