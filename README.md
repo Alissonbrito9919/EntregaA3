@@ -11,9 +11,9 @@ Este repositório contém o código-fonte de um agente preditivo desenvolvido em
 
 ## Tecnologias Utilizadas
 
-* [cite_start]Python 3 [cite: 72]
-* [cite_start]CatBoost Classifier [cite: 50, 75]
-* [cite_start]Pandas [cite: 75]
+* Python 3 
+* CatBoost Classifier 
+* Pandas 
 * Scikit-Learn
 * Joblib
 
